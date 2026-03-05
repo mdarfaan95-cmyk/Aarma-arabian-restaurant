@@ -56,6 +56,7 @@ footer{text-align:center;padding:20px;background:#220000;margin-top:30px}
 
 <nav>Halal Foodie | Siddipet</nav>
 
+<!-- MANDI SECTION -->
 <section>
 <h2>🍖 Mandi Specials</h2>
 <div class="menu">
@@ -63,6 +64,16 @@ footer{text-align:center;padding:20px;background:#220000;margin-top:30px}
 <div class="item">Mutton Mandi ₹650<button onclick="addToCart('Mutton Mandi',650)">Add</button></div>
 <div class="item">Fish Mandi ₹550<button onclick="addToCart('Fish Mandi',550)">Add</button></div>
 <div class="item">Family Mandi ₹1200<button onclick="addToCart('Family Mandi',1200)">Add</button></div>
+</div>
+</section>
+
+<!-- HALEEM SECTION -->
+<section>
+<h2>🥣 Haleem Specials</h2>
+<div class="menu">
+<div class="item">Chicken Haleem ₹170<button onclick="addToCart('Chicken Haleem',170)">Add</button></div>
+<div class="item">Mutton Haleem ₹270<button onclick="addToCart('Mutton Haleem',270)">Add</button></div>
+<div class="item">Beef Haleem ₹190<button onclick="addToCart('Beef Haleem',190)">Add</button></div>
 </div>
 </section>
 
@@ -174,7 +185,6 @@ document.getElementById("cartBox").classList.toggle("active");
 }
 
 function placeOrder(){
-
 if(cart.length===0){alert("Cart Empty");return;}
 
 let name=document.getElementById("custName").value.trim();
